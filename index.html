@@ -3,18 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Job Application Payment</title>
+    <title>Payment Page</title>
     <link rel="stylesheet" href="style.css"> <!-- Link to CSS file -->
 </head>
 <body>
-    <div class="container">
+    <div class="payment-container">
         <h1>Complete Your Payment</h1>
-        <p>To proceed with your job application, please make a payment of ₹1500.</p>
-        <button class="pay-btn" id="rzp-button1">Pay ₹1500</button>
+        <p>To proceed, please make a payment of ₹1500.</p>
+        
+        <!-- UPI ID Form -->
+        <form id="payment-form">
+            <label for="upi-id">Enter your UPI ID:</label>
+            <input type="text" id="upi-id" name="upi-id" placeholder="example@upi" required>
+            <button class="pay-btn" type="submit" id="pay-btn" disabled>Pay ₹1500</button>
+        </form>
     </div>
 
-    <!-- Razorpay Script -->
-    <script src="https://checkout.razorpay.com/v1/checkout.js"></script>
+    <!-- Placeholder for payment integration -->
     <script src="script.js"></script> <!-- Link to JS file -->
 </body>
 </html>
+
