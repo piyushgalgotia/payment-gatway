@@ -10,8 +10,8 @@ body {
     background-color: #f0f0f0;
 }
 
-/* Container styling */
-.container {
+/* Payment container styling */
+.payment-container {
     background-color: #fff;
     padding: 30px;
     border-radius: 10px;
@@ -32,6 +32,29 @@ p {
     margin-bottom: 30px;
 }
 
+/* Form styling */
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* UPI ID input styling */
+label {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+input[type="text"] {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+    margin-bottom: 20px;
+    width: 100%;
+    max-width: 300px;
+}
+
 /* Pay button styling */
 .pay-btn {
     background-color: #0f9d58;
@@ -48,3 +71,9 @@ p {
 .pay-btn:hover {
     background-color: #0a7d46;
 }
+
+.pay-btn:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+
